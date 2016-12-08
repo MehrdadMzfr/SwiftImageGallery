@@ -97,7 +97,7 @@
 					E801E1681DF64ADD00C0F0FF = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = L4RARDNZ2Y;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -266,6 +266,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.sonoma.ipuppet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d230a103-9987-4821-856f-7f95f32cbc55";
+				PROVISIONING_PROFILE_SPECIFIER = "Sonoma Puppet Dev Profile";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -279,6 +281,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.sonoma.ipuppet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d230a103-9987-4821-856f-7f95f32cbc55";
+				PROVISIONING_PROFILE_SPECIFIER = "Sonoma Puppet Dev Profile";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +306,7 @@
 				E801E17D1DF64ADD00C0F0FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
