@@ -13,10 +13,18 @@
 		E801E1741DF64ADD00C0F0FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E801E1731DF64ADD00C0F0FF /* Assets.xcassets */; };
 		E801E1771DF64ADD00C0F0FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E801E1751DF64ADD00C0F0FF /* LaunchScreen.storyboard */; };
 		E80D08321DF9F098005669DC /* ImageGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D08311DF9F098005669DC /* ImageGalleryTests.swift */; };
+		E80D087A1DF9F1E7005669DC /* ImageGalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D08791DF9F1E7005669DC /* ImageGalleryUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E80D08341DF9F098005669DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E801E1611DF64ADD00C0F0FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E801E1681DF64ADD00C0F0FF;
+			remoteInfo = ImageGallery;
+		};
+		E80D087C1DF9F1E7005669DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E801E1611DF64ADD00C0F0FF /* Project object */;
 			proxyType = 1;
@@ -36,6 +44,9 @@
 		E80D082F1DF9F098005669DC /* ImageGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80D08311DF9F098005669DC /* ImageGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryTests.swift; sourceTree = "<group>"; };
 		E80D08331DF9F098005669DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80D08771DF9F1E7005669DC /* ImageGalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGalleryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80D08791DF9F1E7005669DC /* ImageGalleryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryUITests.swift; sourceTree = "<group>"; };
+		E80D087B1DF9F1E7005669DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +64,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E80D08741DF9F1E7005669DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +79,7 @@
 			children = (
 				E801E16B1DF64ADD00C0F0FF /* ImageGallery */,
 				E80D08301DF9F098005669DC /* ImageGalleryTests */,
+				E80D08781DF9F1E7005669DC /* ImageGalleryUITests */,
 				E801E16A1DF64ADD00C0F0FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +89,7 @@
 			children = (
 				E801E1691DF64ADD00C0F0FF /* ImageGallery.app */,
 				E80D082F1DF9F098005669DC /* ImageGalleryTests.xctest */,
+				E80D08771DF9F1E7005669DC /* ImageGalleryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +114,15 @@
 				E80D08331DF9F098005669DC /* Info.plist */,
 			);
 			path = ImageGalleryTests;
+			sourceTree = "<group>";
+		};
+		E80D08781DF9F1E7005669DC /* ImageGalleryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E80D08791DF9F1E7005669DC /* ImageGalleryUITests.swift */,
+				E80D087B1DF9F1E7005669DC /* Info.plist */,
+			);
+			path = ImageGalleryUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +163,24 @@
 			productReference = E80D082F1DF9F098005669DC /* ImageGalleryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E80D08761DF9F1E7005669DC /* ImageGalleryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E80D087E1DF9F1E7005669DC /* Build configuration list for PBXNativeTarget "ImageGalleryUITests" */;
+			buildPhases = (
+				E80D08731DF9F1E7005669DC /* Sources */,
+				E80D08741DF9F1E7005669DC /* Frameworks */,
+				E80D08751DF9F1E7005669DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E80D087D1DF9F1E7005669DC /* PBXTargetDependency */,
+			);
+			name = ImageGalleryUITests;
+			productName = ImageGalleryUITests;
+			productReference = E80D08771DF9F1E7005669DC /* ImageGalleryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +197,12 @@
 						ProvisioningStyle = Manual;
 					};
 					E80D082E1DF9F098005669DC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = L4RARDNZ2Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E801E1681DF64ADD00C0F0FF;
+					};
+					E80D08761DF9F1E7005669DC = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = L4RARDNZ2Y;
 						ProvisioningStyle = Automatic;
@@ -172,6 +225,7 @@
 			targets = (
 				E801E1681DF64ADD00C0F0FF /* ImageGallery */,
 				E80D082E1DF9F098005669DC /* ImageGalleryTests */,
+				E80D08761DF9F1E7005669DC /* ImageGalleryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +242,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E80D082D1DF9F098005669DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E80D08751DF9F1E7005669DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,6 +275,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E80D08731DF9F1E7005669DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80D087A1DF9F1E7005669DC /* ImageGalleryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -221,6 +290,11 @@
 			isa = PBXTargetDependency;
 			target = E801E1681DF64ADD00C0F0FF /* ImageGallery */;
 			targetProxy = E80D08341DF9F098005669DC /* PBXContainerItemProxy */;
+		};
+		E80D087D1DF9F1E7005669DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E801E1681DF64ADD00C0F0FF /* ImageGallery */;
+			targetProxy = E80D087C1DF9F1E7005669DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -407,6 +481,34 @@
 			};
 			name = Release;
 		};
+		E80D087F1DF9F1E7005669DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L4RARDNZ2Y;
+				INFOPLIST_FILE = ImageGalleryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.sonoma.ImageGalleryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "abfbf862-c07a-4157-92d9-0c0ff3d8d89f";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ImageGallery;
+			};
+			name = Debug;
+		};
+		E80D08801DF9F1E7005669DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L4RARDNZ2Y;
+				INFOPLIST_FILE = ImageGalleryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.sonoma.ImageGalleryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "abfbf862-c07a-4157-92d9-0c0ff3d8d89f";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ImageGallery;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -433,6 +535,14 @@
 			buildConfigurations = (
 				E80D08371DF9F098005669DC /* Debug */,
 				E80D08381DF9F098005669DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E80D087E1DF9F1E7005669DC /* Build configuration list for PBXNativeTarget "ImageGalleryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80D087F1DF9F1E7005669DC /* Debug */,
+				E80D08801DF9F1E7005669DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
